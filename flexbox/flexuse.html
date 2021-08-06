@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0cc8a56ba9.js" crossorigin="anonymous"></script>
+    <title>Flex use</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: cadetblue;
+            height: 50px;
+        }
+        nav span{
+            margin-top: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            margin-right: 20px;
+            margin-left: 5px;
+        }
+        nav a:hover{
+            color: white;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input, button{
+            font-size: 20px ;
+            margin-top: 10px;
+            border: 1px solid lightslategray;
+            padding-left: 20px;
+            border-radius: 10px;
+        }
+        .login-form button{
+            background-color: rgb(228, 86, 86);
+            color: lightyellow;
+            font-weight: 800;
+            padding: 10px;
+        }
+        .login-form label{
+            font-size: 20px;
+            color: rgb(102, 43, 43);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">Contact us</a>
+            </span>
+            <span>
+                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            </span>
+           
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2> Login Form</h2>
+            <label for="email">Enter Your Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter mail"required>
+            <label for="pass">Enter Password:</label>
+            <input type="password" name="password" id="pass" placeholder="Enter password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>
