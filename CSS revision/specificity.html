@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .heading{
+            color: white;
+        }
+        h1{
+            color: rgb(192, 19, 19) !important;
+            background-color: crimson;
+        }
+        h1{
+            color: darkcyan;
+        }
+        p{
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Heading number 1</h1>
+    <h1 class="heading">Heading number 2</h1>
+    <h1 class="heading">Heading number 3</h1>
+    <h1 class="heading">Heading number 4</h1>
+    <p>this is my description</p>
+    <p>this is my description</p>
+    <p>this is my description</p>
+    <p>this is my description</p>
+    <p>this is my description</p>
+</body>
+</html>
+<!-- inline style
+id
+class
+html tage -->
